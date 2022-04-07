@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function(){
-    createFlash.addEventListener('click',function(){
+    get.addEventListener('click',function(){
         SendStatement();
     })
 })
 
 function SendStatement(){
-    alert("Created Flashcards")
+    var statement = document.getElementById("term").value;
+    alert(statement)
 }

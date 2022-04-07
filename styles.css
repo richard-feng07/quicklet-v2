@@ -1,17 +1,59 @@
 h1{
-  font-size: 101px;
+  font-size: 50px;
   color: black;
   text-align: center;
-  font-family: roboto-mono;
+  font-family: soleil;
 }
-button{
+#mainButton{
   border-radius: 5px;
   width: 200px;
   height: 40px;
-  text-align: center;
   border: 0px;
   background-color: #4fa1ff;
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
 }
-button:hover{
+#mainButton:hover{
   background-color: #6bb0ff;
+}
+
+
+.mainContain{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 200px;
+}
+
+input{
+  background-color: none;
+  width: 300px;
+  height: 100px;
+  border-radius: 2px;
+  border-color: #ededed;
+  border-style: solid;
+  outline: 1px;
+  font-family: soleil;
+  display: block;
+  margin: 0 auto;
+}
+#back{
+  display: block;
+  position: relative;
+  margin-top: 0px;
+  border: 0px;
+  background-color: #4fa1ff;
+  font-weight: bold;
+  margin-top: 5px;
+  border-radius: 15%;
+  text-decoration: none;
+}
+
+span{
+  display: block;
+  position: absolute;
+  top: 0px;
 }
