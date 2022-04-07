@@ -11,20 +11,28 @@ def FillCards():
     term = input("Please add a term. ")
     definition = input("Please add a definition ")
     flashcards.append([term, definition])
-  form = input("View your cards or study in test form? enter view or test? ")
+  form = input("View your cards or study in test form? [v/t] ")
   choice(form)
 
 def choice(form):
-  if form == "test":
+  if form == "t":
     Study(input("Would you like to study by terms or definitions? ")) #list user options
-  if form == "view":
+  if form == "v":
     View()
+
     
   
 def View():
+  print()
   for i in range(m):
     print(flashcards[i][0]+  ": "+  flashcards[i][1])
-
+  choice = input("Would you like to view your flashcards again or study in test form? [v/t]")
+  if(choice == "v"):
+    View()
+  elif(choice == "t"):
+    Study(input("Would you like to study by terms or definitions? "))
+  else:
+    print("Invalid input")
 
 def Study(choice):
   answ = ""
@@ -52,9 +60,5 @@ def Study(choice):
         print("Not quite, the answer was: " + flashcards[i][0])
   else:
     print("Invalid input")
-
-
-
-
 
 CreateCard(int(input("How much flashcards would you like to create? ")))
